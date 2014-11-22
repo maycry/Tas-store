@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title> 
+  <title>Tas Store</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'> 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="cssheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/fotorama.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <meta name="viewport" content="width=1050px">
 </head>
 <body>
-  <div class="wrapper">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <div class="wrapper clrfix">
     <div class="header-top">
-      <div class="lang-select">
-        <ul>
-          <li>Rus</li>
-          <li>Eng</li>
-          <li>Ukr</li>
+      <div class="language-list">
+        <a class="language-current" href="#">RU</a>
+        <ul class="language-popup" style="display: none;">
+          <li><a href="#">UA</a></li>
+          <li><a href="#">EN</a></li>
         </ul>
       </div>
+
       <div class="menu-header-top">
         <a href="#" class="menu-item">О компании</a>
         <a href="#" class="menu-item">Новости</a>
@@ -22,13 +37,15 @@
         <a href="#" class="menu-item">Контакты</a>
         <a href="#" class="menu-item">Оферта</a>
         <a href="#" class="menu-item">Страховой случай</a>
-        <a href="#" class="menu-item">Личный кабинет</a>
+        <a href="#" class="menu-item menu-item-cabinet">Личный кабинет</a>
       </div>
     </div>
+
     <div class="header-bottom">
       <a href="#" class="logo"><img src="images/logo-header.png" alt="ТАС"></a>
+
       <div class="header-bottom-right">
-        <div class="phone">0 800 500 195 / <a href="#">518</a></div>
+        <div class="phone">0 800 500 195<img src="images/slash.png" alt="/" class="phone-slash"><a href="#" class="phone-short">518</a></div>
         <div class="menu-header-bottom">
           <a href="#" class="menu-item">Перезвоните мне</a>
           <a href="#" class="menu-item">Онлайн консультация</a>
@@ -37,5 +54,209 @@
       </div>
     </div>
   </div>
+
+
+  <ul class="menu-product clrfix">
+    <li class="menu-product-item"><a href="#"><img src="images/icon-osago.png" alt=""><br>ОСАГО</a></li>
+    <li class="menu-product-item"><a href="#"><img src="images/icon-kasko.png" alt=""><br>Каско</a></li>
+    <li class="menu-product-item"><a href="#"><img src="images/icon-trip.png" alt=""><br>Путешествие</a></li>
+    <li class="menu-product-item"><a href="#"><img src="images/icon-property.png" alt=""><br>Имущество</a></li>
+  </ul>
+
+
+  
+  <div class="fotorama" data-height="400px" data-width="100%" data-nav="dots" data-fit="none" data-shadow="none" data-autoplay="10000">
+    <div class="slide">
+      <div class="wrapper">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="slide-left">
+                <h1>ОСАГО дешевле на 25%</h1>
+                <p>Узнать стоимость и заказать полис можно прямо у нас на сайте. Уже на следующий день полис доставят к вам&nbsp;домой.</p>
+                <a href="#" class="rounded-button">Посчитать сейчас</a>
+              </td>
+              <td class="slide-right">
+                <img src="images/illustration-osago.jpg" alt="ОСАГО">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="wrapper">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="slide-left">
+                <h1>КАСКО дешевле на 25%</h1>
+                <p>Узнать стоимость и заказать полис можно прямо у нас на сайте. Уже на следующий день полис доставят к вам&nbsp;домой.</p>
+                <a href="#" class="rounded-button">Посчитать сейчас</a>
+              </td>
+              <td class="slide-right">
+                <img src="images/illustration-osago.jpg" alt="ОСАГО">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="wrapper">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="slide-left">
+                <h1>Страхование имущества</h1>
+                <p>Узнать стоимость и заказать полис можно прямо у нас на сайте. Уже на следующий день полис доставят к вам&nbsp;домой.</p>
+                <a href="#" class="rounded-button">Посчитать сейчас</a>
+              </td>
+              <td class="slide-right">
+                <img src="images/illustration-osago.jpg" alt="ОСАГО">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <ul class="menu-banners clrfix">
+    <li class="menu-banners-item">
+      <a href="#">
+        <table>
+          <tr>
+            <td class="banner-text-container">OСАГО дешевле&nbsp;на&nbsp;25%</td>
+          </tr>
+          <tr>
+            <td class="banner-image-container">
+              <img src="images/illustration-banner-percent.png" alt="">
+            </td>
+          </tr>
+        </table>
+      </a>
+    </li>
+    <li class="menu-banners-item">
+      <a href="#">
+        <table>
+          <tr>
+            <td class="banner-text-container">Урегулировать страховой&nbsp;случай</td>
+          </tr>
+          <tr>
+            <td class="banner-image-container">
+              <img src="images/illustration-banner-excl.png" alt="">
+            </td>
+          </tr>
+        </table>
+      </a>
+    </li>
+    <li class="menu-banners-item">
+      <a href="#">
+        <table>
+          <tr>
+            <td class="banner-text-container">Вызвать страхового&nbsp;агента</td>
+          </tr>
+          <tr>
+            <td class="banner-image-container">
+              <img src="images/illustration-banner-pointing-man.png" alt="">
+            </td>
+          </tr>
+        </table>
+      </a>
+    </li>
+    <li class="menu-banners-item">
+      <a href="#">
+        <table>
+          <tr>
+            <td class="banner-text-container">Финансовый отчёт за 2014&nbsp;год</td>
+          </tr>
+          <tr>
+            <td class="banner-image-container">
+              <img src="images/illustration-banner-graph.png" alt="">
+            </td>
+          </tr>
+        </table>
+      </a>
+    </li>
+  </ul>
+
+  <div class="news clrfix">
+    <div class="wrapper">
+      <div class="col-1-3">
+        <a href="#"><h3>Новые тарифы на ОСАГО</h3></a>
+        <p>Лекцию «Культура большого города: есть ли место ответственности каждого?» провела страховая компания ТАС.</p>
+      </div>
+      <div class="col-1-3">
+        <a href="#"><h3>Новые тарифы на ОСАГО</h3></a>
+        <p>Лекцию «Культура большого города: есть ли место ответственности каждого?» провела страховая компания ТАС.</p>
+      </div>
+      <div class="col-1-3">
+        <a href="#"><h3>Новые тарифы на ОСАГО</h3></a>
+        <p>Лекцию «Культура большого города: есть ли место ответственности каждого?» провела страховая компания ТАС.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="seo clrfix">
+      <div class="col-1-3">
+        <p>Страховая программа «Зимний спорт» создана специально для тех, кто планирует провести новогодние каникулы или зимний отпуск на горнолыжных курортах России, Европы или в любой другой стране мира.</p>
+        <p>Полис подходит для предоставления в посольства европейских стран для получения шенгенской визы.</p>
+      </div> 
+      <div class="col-1-3">
+        <p>Страховая программа «Зимний спорт» создана специально для тех, кто планирует провести новогодние каникулы или зимний отпуск на горнолыжных курортах России, Европы или в любой другой стране мира.</p>
+        <p>Полис подходит для предоставления в посольства европейских стран для получения шенгенской визы.</p>
+      </div>
+      <div class="col-1-3">
+        <p>Страховая программа «Зимний спорт» создана специально для тех, кто планирует провести новогодние каникулы или зимний отпуск на горнолыжных курортах России, Европы или в любой другой стране мира.</p>
+        <p>Полис подходит для предоставления в посольства европейских стран для получения шенгенской визы.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="footer clrfix">
+      <div class="col-1-3 clrfix">
+        <div class="col-1-2">
+          <h4>Меню</h4>
+          <a href="#">О компании</a>
+          <a href="#">Новости</a>
+          <a href="#">Отчетность</a>
+          <a href="#">Контакты</a>
+        </div>  
+        <div class="col-1-2 col-1-2-second">
+          <a href="#">Оферта</a>
+          <a href="#">Cтраховой случай</a>
+          <a href="#">Личный кабинет</a>
+        </div>
+      </div>
+      <div class="col-1-3 clrfix">
+        <div class="col-1-2">
+          <h4>Продукты</h4>
+          <a href="#">ОСАГО</a>
+          <a href="#">Каско</a>
+          <a href="#">Туризм</a>
+          <a href="#">Имущество</a>
+        </div>  
+        <div class="col-1-2">
+          <h4>Cоциальные сети</h4>
+          <a href="#" class="icon-social icon-social-facebook">Facebook</a>
+          <a href="#" class="icon-social icon-social-twitter">Twitter</a>
+          <a href="#" class="icon-social icon-social-youtube">Youtube</a>
+          <a href="#" class="icon-social icon-social-lj">Livejournal</a>
+        </div>
+      </div>
+      <div class="col-1-3 clrfix">
+        <div class="fb-follow" data-href="https://www.facebook.com/TAS.Insurance.Group" data-width="100%" data-height="150px" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div>
+      </div>
+    </div>
+  </div>
+  
+
+
 </body>
 </html>
