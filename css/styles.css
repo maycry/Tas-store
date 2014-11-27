@@ -48,8 +48,8 @@ h1{
 
 
 .header-top{
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 
@@ -206,10 +206,10 @@ h1{
 
 .menu-product{
   padding: 0;
-  padding-top: 35px;
+  padding-top: 20px;
   margin: 0;
   min-width: 1100px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 .menu-product .menu-product-item{
   width: 25%;
@@ -220,8 +220,8 @@ h1{
   background-color: #065389;
   border: 1px solid white;
   display: block;
-  padding-top: 37px;
-  height: 144px;
+  padding-top: 24px;
+  height: 120px;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -254,7 +254,7 @@ h1{
 
 
 .fotorama{
-  padding-top: 37px;
+  padding-top: 20px;
 }
 .fotorama .fotorama__nav__frame.fotorama__active .fotorama__dot, .fotorama .fotorama__nav__frame .fotorama__dot{
   width: 8px;
@@ -268,6 +268,9 @@ h1{
 .fotorama__nav--dots .fotorama__nav__frame{
   width: 27px !important;
   margin-top: 5px;
+}
+.fotorama__nav-wrap{
+  margin-top: -30px;
 }
 .fotorama__arr--next{
   background: url("../images/icon-arrow-right.png") center center no-repeat;
