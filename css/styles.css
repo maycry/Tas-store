@@ -544,7 +544,7 @@ p.footer-asteriks{
   list-style: none;
   float:left;
 }
-.steps .step-item a{
+.steps .step-item span{
   background-color: #065389;
   border: 1px solid white;
   display: block;
@@ -555,33 +555,30 @@ p.footer-asteriks{
   font-size: 21px;
   font-weight: bold;
   line-height: 50px;
-  transition: background-color .2s;
+  cursor: default;
 }
-.steps .step-item.active a{
+.steps .step-item.active span{
   background-color: #ffffff!important;
   color: #000000;
   box-shadow: 0 3px 0 #d72e5c inset;
   pointer-events: none;
 }
-.steps .step-item a:hover{
-  background-color: #1f81bf!important;
-}
-.steps .step-item:first-child a{
+.steps .step-item:first-child span{
   border-left: none!important;
 }
-.steps .step-item:nth-child(1) a{
+.steps .step-item:nth-child(1) span{
   background-color: #065389;
 }
-.steps .step-item:nth-child(2) a{
+.steps .step-item:nth-child(2) span{
   background-color: #106296;
 }
-.steps .step-item:nth-child(3) a{
+.steps .step-item:nth-child(3) span{
   background-color: #156da5;
 }
-.steps .step-item:nth-child(4) a{
+.steps .step-item:nth-child(4) span{
   background-color: #1d76ae;
 }
-.steps .step-item:last-child a{
+.steps .step-item:last-child span{
   border-right: none!important;
 }
 
@@ -741,7 +738,7 @@ select.size-xs{
   border-top: 5px solid #1b70a7;
 }
 .form label{
-  margin-top: 6px;
+  margin-top: 5px;
   margin-bottom: 5px;
   display: inline-block;
 }
@@ -872,6 +869,98 @@ select.size-xs{
   margin-bottom: 0px;
 }
 
+
+
+/*Program*/
+.program-header{
+  position: relative;
+}
+.program-header h1{
+  text-align: center
+}
+.program-header .back{
+  background-color: #ffffff;
+  color: #666666;
+  border: 1px solid #dadada;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 30px;
+  position: absolute;
+}
+.program-header .back:hover{
+  border-color: #d72e5c;
+  color: #d72e5c;
+}
+.program-ladder{
+  padding-top: 20px;
+}
+.program-ladder .ladder-item{
+  width: 30%;
+  margin-right: 5%;
+  border: 1px solid #dadada;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  float: left;
+}
+.program-ladder .ladder-item:last-child{
+  margin-right: 0%;
+}
+.ladder-item .ladder-item-header{
+  border-radius: 9px;
+  padding: 1px 30px;
+  background-color: #dadada;
+  position: relative;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.ladder-item .ladder-item-header i.help{
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url("../images/icon-question.png") center center no-repeat;
+  cursor: pointer;
+  right: 20px;
+  top: 50%;
+  margin-top: -17px;
+}
+.ladder-item .ladder-item-header h2{
+  font-size: 24px;
+  line-height: 30px;
+}
+.ladder-item .ladder-item-body {
+  padding: 1px 30px 30px;
+}
+.ladder-item .ladder-item-body .rounded-button{
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 0;
+}
+.ladder-item .ladder-item-body ul{
+  padding: 0;
+}
+.ladder-item .ladder-item-body li{
+  list-style: none;
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 0;
+  border-bottom: 1px solid #dadada;
+}
+.ladder-item .ladder-item-body li:last-child{
+  border-bottom: none;
+}
+.ladder-item .ladder-item-body li:before{
+  content: "";
+  display: inline-block;
+  margin-left: -30px;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  vertical-align: -3px;
+  background: url("../images/icon-checkmark.png") center center no-repeat;
+}
 
 
 .col-1-2{
