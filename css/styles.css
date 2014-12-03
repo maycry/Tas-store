@@ -29,6 +29,24 @@ h1{
   line-height: 42px;
   font-weight: 400;
 }
+
+article h1{
+  margin-bottom: 0;
+}
+article p{
+  font-size: 18px;
+  color: #666666;
+  line-height: 28px;
+  padding: 14px 0;
+  margin: 0;
+}
+article a{
+  color: #156da5;
+}
+article a:hover{
+  color: #d72e5c;
+}
+
 .rounded-button{
   background-color: #d72e5c;
   line-height: 55px;
@@ -40,9 +58,15 @@ h1{
   text-decoration: none;
   transition: background-color 0.2s;
 }
-
 .rounded-button:hover{
   background-color: #ed5d84;
+}
+.pseudo{
+  text-decoration: none;
+  border-bottom: 1px dotted #156da5;
+}
+.pseudo:hover{
+  border-bottom-color: #d72e5c;
 }
 
 
@@ -97,7 +121,9 @@ h1{
   padding: 0;
   background-color: white;
   width: 55px;
-  top:37px;
+  top:30px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .language-list .language-popup li a{
   text-align: center;
@@ -144,6 +170,7 @@ h1{
 
 .header-bottom{
   padding-top: 18px;
+  position: relative;
 }
 
 
@@ -154,6 +181,17 @@ h1{
   float: left;
 }
 
+
+
+.header-bottom-banner{
+  position: absolute;
+  left: 30%;
+  top: 10px;
+}
+.header-bottom-banner img{
+  border-radius: 5px;
+  border: #dadada 1px solid;
+}
 
 
 
@@ -167,6 +205,14 @@ h1{
 .header-bottom-right .phone{
   font-size: 42px;
   line-height: 20px;
+}
+.header-bottom-right .phone:before{
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 25px;
+  height: 25px;
+  background: url("../images/icon-phone.png") center center no-repeat;
 }
 .header-bottom-right .phone-slash{
   vertical-align: -4px;
@@ -193,6 +239,9 @@ h1{
   color: #156da5;
   font-size: 17px;
   text-decoration: none;
+}
+.menu-header-bottom .menu-item-icon{
+  vertical-align: -3px;
 }
 .menu-header-bottom .menu-item:hover{
   color: #d72e5c;
@@ -225,7 +274,8 @@ h1{
   color: white;
   text-decoration: none;
   text-align: center;
-  font-size: 21px;
+  font-size: 26px;
+  font-weight: bold;
   line-height: 32px;
   transition: background-color .2s;
 }
@@ -417,7 +467,7 @@ h1{
 
 .footer{
   padding-top: 25px;
-  padding-bottom: 60px;
+  padding-bottom: 25px;
 }
 .footer h4{
   color: #cccccc;
@@ -427,6 +477,14 @@ h1{
   font-size: 13px;
   line-height: 30px;
   margin: 0;
+}
+.footer-made-in{
+  color: #656565;
+  padding-bottom: 80px;
+}
+.footer-made-in img{
+  vertical-align: -8px;
+  margin-left: 2px;
 }
 .footer a{
   display: block;
@@ -456,8 +514,116 @@ h1{
 .footer .icon-social-lj:before{
   background-image: url("../images/icon-lj.png");
 }
+p.footer-asteriks{
+  color: #b2b2b2;
+  font-size: 15px;
+}
+.fb-follow{
+  height: 115px;
+}
+
+
+
+/*--------Calc page---------*/
+
+.steps{
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+  min-width: 1100px;
+  padding-bottom: 15px;
+}
+.steps .step-item{
+  width: 25%;
+  list-style: none;
+  float:left;
+}
+.steps .step-item a{
+  background-color: #065389;
+  border: 1px solid white;
+  display: block;
+  height: 50px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 50px;
+  transition: background-color .2s;
+}
+.steps .step-item.active a{
+  background-color: #ffffff!important;
+  color: #000000;
+  box-shadow: 0 3px 0 #d72e5c inset;
+  pointer-events: none;
+}
+.steps .step-item a:hover{
+  background-color: #1f81bf!important;
+}
+.steps .step-item:first-child a{
+  border-left: none!important;
+}
+.steps .step-item:nth-child(1) a{
+  background-color: #065389;
+}
+.steps .step-item:nth-child(2) a{
+  background-color: #106296;
+}
+.steps .step-item:nth-child(3) a{
+  background-color: #156da5;
+}
+.steps .step-item:nth-child(4) a{
+  background-color: #1d76ae;
+}
+.steps .step-item:last-child a{
+  border-right: none!important;
+}
+
+
+.calc-header-icon{
+  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  box-shadow: 0 5px 10px #e6e6e6;
+  background: url("../images/icon-calculator.png") center center no-repeat;
+}
+.calc-header-list{
+  margin-top: 45px;
+} 
+.calc-header-list li{
+  line-height: 24px;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #666666;
+  list-style: none;
+}
+.calc-header-list li:before{
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  vertical-align: -3px;
+  background: url("../images/icon-checkmark.png") center center no-repeat;
+}
+
+
+
 .col-1-2{
   width: 50%;
+  float: left;
+}
+.col-2-12{
+  width: 17%;
+  float: left;
+}
+.col-7-12{
+  width: 58%;
+  float: left;
+}
+.col-3-12{
+  width: 25%;
   float: left;
 }
 .col-1-2-second{
@@ -469,4 +635,7 @@ h1{
   content: "";
   display: block;
   clear: both;
+}
+.hided{
+  display: none;
 }
