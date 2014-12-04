@@ -53,7 +53,7 @@ article a:hover{
   color: #d72e5c;
 }
 
-.rounded-button{
+.rounded-button, .button{
   background-color: #d72e5c;
   line-height: 55px;
   padding: 0 50px;
@@ -647,14 +647,16 @@ p.footer-asteriks{
 .wizard table{
   width: 100%;
 }
-.form{
-}
 .form td, .ui-dialog td{
   padding: 5px 20px 5px 0;
   font-size: 16px;
   color: #656565;
   vertical-align: top;
   height: 48px;
+}
+.ui-dialog td .button{
+  color: #ffffff;
+  margin-left: 80px;
 }
 .labelCaption{
   margin-top: 5px;
@@ -684,7 +686,7 @@ input[type="radio"], input[type="checkbox"]{
 .overlay-popup .form .label{
   width: 70px;
 }
-input[type="textbox"], input[type="password"],select{
+input[type="textbox"], input[type="password"], input[type="text"],select{
   border: 1px solid #d9d9d9;
   box-shadow: 0 1px 2px #eeeeee inset;
   padding: 7px 5px;
@@ -939,6 +941,8 @@ select.size-xs{
 }
 .ladder-item .ladder-item-body ul{
   padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
 }
 .ladder-item .ladder-item-body li{
   list-style: none;
@@ -961,6 +965,262 @@ select.size-xs{
   vertical-align: -3px;
   background: url("../images/icon-checkmark.png") center center no-repeat;
 }
+
+
+
+/* Overlays */
+.ui-dialog{
+  display: block;
+  z-index: 1002;
+  outline: 0px;
+  height: auto;
+  overflow: visible;
+  top: 30px;
+  left: 50%;
+  margin-left: -225px;
+  background: #ffffff;
+  position: fixed;
+  width: 550px;
+}
+.ui-widget-overlay {
+  position: fixed;
+  background: #000000;
+  opacity: .8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ui-widget-header{
+  padding: 30px 60px;
+  background: #1d76ae;
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+}
+.ui-dialog-titlebar-close{
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../images/icon-close.png") center center no-repeat;
+  right: 40px;
+  top: 32px;
+}
+.remember{
+  display: inline-block;
+  width: 80px;
+}
+.ui-dialog-content{
+  padding: 30px 60px;
+}
+.ui-dialog-content td input{
+  width: 310px;
+}
+#ctl00_LoginPlugin1_HyperLinkRemeberPassword{
+  padding-left: 83px;
+}
+.ui-dialog-title{
+  font-size: 28px;
+  font-weight: normal;
+}
+.ui-datepicker {
+  width: 17em;
+  padding: .2em .2em 0;
+  display: none;
+  box-shadow: 0 1px 10px #444;
+}
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+  top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+  right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 49%;
+}
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em;
+}
+.ui-datepicker th {
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+}
+.ui-datepicker td {
+  border: 0;
+  padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+  display: block;
+  padding: .2em;
+  text-align: right;
+  text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+  width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left;
+}
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+  direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+  right: 2px;
+  left: auto;
+  cursor: pointer;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+  left: 2px;
+  right: auto;
+  cursor: pointer;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+  right: 1px;
+  left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+  left: 1px;
+  right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+  float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+  font-size: 13px;
+}
+.ui-widget .ui-widget {
+  font-size: 1em;
+}
+.ui-state-hover{
+  background-color: #ffe4be;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-size: 1em;
+}
+.ui-widget-content {
+  background: white;
+  color: #333333;
+}
+.ui-widget-content a {
+  color: #333333;
+}
+.ui-widget-header a {
+  color: #ffffff;
+}
+
 
 
 .col-1-2{

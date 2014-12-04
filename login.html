@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/fotorama.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <meta name="viewport" content="width=1050px">
+</head>
+<body>
+
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-ctl00_LoginPlugin1_PanelPopup" style="display: block; z-index: 1002; outline: 0px; height: auto;  overflow: visible;">
+  <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-ctl00_LoginPlugin1_PanelPopup">Вход в личный кабинет</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick"></span></a>
+  </div>
+  <div id="ctl00_LoginPlugin1_PanelPopup" style="width: auto; min-height: 59px; height: auto;" class="ui-dialog-content ui-widget-content">
+
+    <div class="dialog-content">
+      <div id="ctl00_LoginPlugin1_PanelLogin" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_LoginPlugin1_ButtonSave')">
+
+        <table width="100%">
+          <tbody>
+            <tr id="ctl00_LoginPlugin1_trEmail">
+              <td>
+                <span id="ctl00_LoginPlugin1_LabelLogin" class="remember">Логин</span>
+                <input name="ctl00$LoginPlugin1$TextBoxUserName" type="text" maxlength="50" id="ctl00_LoginPlugin1_TextBoxUserName" tabindex="48" title="Электронный адрес">
+                <input type="text" id="testtextbox" name="testtextbox" value="autocompletehack" style="display: none;">
+                <span id="ctl00_LoginPlugin1_RequiredFieldValidatorTextBoxFace_Email" title="Поле является необходимым" class="cameoValidatorHighlight" style="color:Red;display:none;">*</span>
+                <span id="ctl00_LoginPlugin1_RegularExpressionValidatorTextBoxInsuredEmail" title="Неправильный формат" class="cameoValidatorHighlight" style="color:Red;display:none;">*</span>
+
+              </td>
+            </tr>
+
+            <tr id="ctl00_LoginPlugin1_trPassword">
+              <td>
+                <span id="ctl00_LoginPlugin1_LabelPassword" class="remember">Пароль</span>
+                <input name="ctl00$LoginPlugin1$TextBoxPassword" type="password" maxlength="50" id="ctl00_LoginPlugin1_TextBoxPassword" tabindex="49" title="Пароль">
+                <input type="password" id="testblacrapadla" name="testblacrapadla" value="autocompletehack" style="display: none;">
+                <span id="ctl00_LoginPlugin1_RequiredFieldValidator1" title="Поле является необходимым" class="cameoValidatorHighlight" style="color:Red;display:none;">*</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <a id="ctl00_LoginPlugin1_HyperLinkRemeberPassword" tabindex="50" href="javascript:void(0)">Забыли пароль?</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a id="ctl00_LoginPlugin1_ButtonSave" class="button" href="javascript:__doPostBack('ctl00$LoginPlugin1$ButtonSave','')"><span id="ctl00_LoginPlugin1_LabelSave">Войти</span></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="ui-widget-overlay" style="width: 1437px; height: 659px; z-index: 1001;"></div>
+</body>
