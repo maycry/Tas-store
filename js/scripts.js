@@ -54,14 +54,22 @@ jQuery(document).ready(function($) {
   });
   /*----------Stick-price-end-------------*/
 
+
+
+  /*----------Expand-more-------------*/
+
   $(".expand").click(function(event) {
-    $(".hided").removeClass('hided');
+    $(".full-description").removeClass('hided');
     $(".short-description").addClass('hided');
     return false;
 
   });
-  /*----------Expand-more-------------*/
-
+  $(".collapse").click(function(event) {
+    $(".full-description").addClass('hided');
+    $(".short-description").removeClass('hided');
+    return false;
+  });
   /*----------Expand-more-end-------------*/
+
 
 });

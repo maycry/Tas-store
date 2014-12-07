@@ -310,7 +310,7 @@ article a:hover{
 
 
 .fotorama{
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .fotorama .fotorama__nav__frame.fotorama__active .fotorama__dot, .fotorama .fotorama__nav__frame .fotorama__dot{
   width: 8px;
@@ -340,10 +340,17 @@ article a:hover{
   width: 38px;
   height: 38px;
 }
+.fotorama__nav__shaft{
+  top: -10px;
+}
 .slide-left, .slide-right{
   width: 50%;
   vertical-align: middle;
   text-align: center;
+}
+.slide-left, .slide-right img{
+  height: 340px;
+  width: auto;
 }
 .slide-left{
   padding: 0 5%;
@@ -710,18 +717,6 @@ select{
 .size-xs{
   width: 50px;
 }
-select.size-l{
-  width: 311px;
-}
-select.size-m{
-  width: 231px;
-}
-select.size-s{
-  width: 121px;
-}
-select.size-xs{
-  width: 61px;
-}
 .watermarked{
   color: #aaa;
 }
@@ -732,7 +727,8 @@ select.size-xs{
   cursor: pointer;
   vertical-align: -4px;
   text-align: center;
-  line-height: 19px;
+  padding-top: 0px;
+  padding-left: 1px;
   font-size: 13px;
   font-weight: bold;
   color: #1b70a7;
@@ -784,6 +780,8 @@ select.size-xs{
   padding-bottom: 10px;
   padding-top: 20px;
   padding-left: 200px;
+  cursor: default;
+  pointer-events: none;
 }
 .form .wizard_buttons{
   padding: 25px 0px;
@@ -951,19 +949,38 @@ select.size-xs{
   line-height: 24px;
   padding: 12px 0;
   border-bottom: 1px solid #dadada;
+  cursor: default;
 }
 .ladder-item .ladder-item-body li:last-child{
   border-bottom: none;
 }
-.ladder-item .ladder-item-body li:before{
-  content: "";
+.ladder-item .ladder-item-body li i{
   display: inline-block;
-  margin-left: -30px;
-  width: 22px;
+  margin-left: -40px;
+  width: 40px;
   height: 22px;
-  margin-right: 10px;
+  cursor: help;
   vertical-align: -3px;
   background: url("../images/icon-checkmark.png") center center no-repeat;
+}
+.ladder-item .ladder-item-body li:hover i {
+  background: url("../images/icon-question.png") center center no-repeat;
+}
+.ladder-item .ladder-item-body li i p.tip{
+  font-style: normal;
+  font-size: 14px;
+  color: #666666;
+  padding: 10px 15px;
+  margin-top: 25px;
+  margin-left: 5px;
+  width: 200px;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0,0,0,.2);
+  position: absolute;
+  display: none;
+}
+.ladder-item .ladder-item-body li i:hover p.tip{
+  display: block;
 }
 
 
@@ -977,7 +994,7 @@ select.size-xs{
   overflow: visible;
   top: 30px;
   left: 50%;
-  margin-left: -225px;
+  margin-left: -275px;
   background: #ffffff;
   position: fixed;
   width: 550px;
