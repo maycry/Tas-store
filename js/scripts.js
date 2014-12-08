@@ -24,11 +24,13 @@ jQuery(document).ready(function($) {
     if (e.which == 27) {
       $(".language-popup").hide();
       $(".language-current").removeClass('active');
+      $('p.tip').removeClass('showed');
     }
   });
   $("html").click(function(event) {
     $(".language-popup").hide();
     $(".language-current").removeClass('active');
+    $('p.tip').removeClass('showed');
   });
   /*-------languages-end-------*/
 
@@ -55,7 +57,6 @@ jQuery(document).ready(function($) {
   /*----------Stick-price-end-------------*/
 
 
-
   /*----------Expand-more-------------*/
 
   $(".expand").click(function(event) {
@@ -72,4 +73,14 @@ jQuery(document).ready(function($) {
   /*----------Expand-more-end-------------*/
 
 
+  /*----------Help laddeder start-------------*/
+  $(".ladder-item-body li i").click(function(event) {
+    event.stopPropagation();
+    $(this).children('.tip').toggleClass('showed');
+  });
+
+  $(".ladder-item-body li p.tip .close").click(function(event) {
+    $(this).parent().removeClass('showed');
+  });
+  /*----------Help laddeder end-------------*/
 });

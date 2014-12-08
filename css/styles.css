@@ -20,7 +20,7 @@ html {
 
 .wrapper{
   width: 90%;
-  min-width: 1000px;
+  min-width: 1100px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -956,12 +956,24 @@ select{
 }
 .ladder-item .ladder-item-body li i{
   display: inline-block;
+  position: relative;
   margin-left: -40px;
   width: 40px;
   height: 22px;
-  cursor: help;
+  cursor: pointer;
   vertical-align: -3px;
   background: url("../images/icon-checkmark.png") center center no-repeat;
+}
+.ladder-item .ladder-item-body li i p.tip .close{
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  opacity: .3;
+  right: 10px;
+  top: 10px;
+  z-index: 3;
+  background: url("../images/icon-close-d.png") center center no-repeat;
 }
 .ladder-item .ladder-item-body li:hover i {
   background: url("../images/icon-question.png") center center no-repeat;
@@ -978,9 +990,7 @@ select{
   box-shadow: 0 10px 10px rgba(0,0,0,.2);
   position: absolute;
   display: none;
-}
-.ladder-item .ladder-item-body li i:hover p.tip{
-  display: block;
+  z-index: 2;
 }
 
 
@@ -1272,4 +1282,7 @@ select{
 }
 .hided{
   display: none;
+}
+.showed{
+  display: block!important;
 }
