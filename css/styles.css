@@ -20,7 +20,7 @@ html {
 
 .wrapper{
   width: 90%;
-  min-width: 1100px;
+  min-width: 1000px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -263,7 +263,7 @@ article a:hover{
   padding: 0;
   padding-top: 20px;
   margin: 0;
-  min-width: 1100px;
+  min-width: 1000px;
   padding-bottom: 15px;
 }
 .menu-product .menu-product-item{
@@ -369,7 +369,7 @@ article a:hover{
   padding: 0;
   padding-top: 25px;
   margin: 0;
-  min-width: 1100px;
+  min-width: 1000px;
   padding-bottom: 25px;
 }
 .menu-banners .menu-banners-item{
@@ -543,7 +543,7 @@ p.footer-asteriks{
   padding: 0;
   padding-top: 20px;
   margin: 0;
-  min-width: 1100px;
+  min-width: 1000px;
   padding-bottom: 15px;
 }
 .steps .step-item{
@@ -1246,6 +1246,17 @@ select{
 }
 .ui-widget-header a {
   color: #ffffff;
+}
+
+
+
+/*Notifications*/
+.notification{
+  padding: 70px 0 250px;
+  text-align: center;
+}
+.notification p {
+  font-size: 21px;
 }
 
 
