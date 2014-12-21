@@ -20,7 +20,7 @@ html {
 
 .wrapper{
   width: 90%;
-  min-width: 1000px;
+  min-width: 1100px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -354,12 +354,16 @@ article a:hover{
 }
 .slide-left{
   padding: 0 5%;
+  width: 50%;
 }
 .slide-left p{
   font-size: 18px;
   color: #656565;
   line-height: 30px;
   padding-bottom: 10px;
+}
+.slide table{
+  width: 100%;
 }
 
 
@@ -551,6 +555,9 @@ p.footer-asteriks{
   list-style: none;
   float:left;
 }
+.steps.three-steps .step-item{
+  width: 33.3333333%;
+}
 .steps .step-item span{
   background-color: #065389;
   border: 1px solid white;
@@ -651,6 +658,9 @@ p.footer-asteriks{
 
 
 /*----------Forms-----------*/
+.wizard{
+  min-height: 240px;
+}
 .wizard table{
   width: 100%;
 }
@@ -991,6 +1001,9 @@ select{
   position: absolute;
   display: none;
   z-index: 2;
+}
+.program-ladder .ladder-item:last-child .tip{
+  right: 0;
 }
 
 
