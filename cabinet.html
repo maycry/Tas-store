@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tas Store - Calc 1</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/fotorama.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <meta name="viewport" content="width=1150px">
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <div class="wrapper clrfix">
+    <div class="header-top clrfix">
+      <div class="language-list">
+        <a class="language-current" href="#">RU</a>
+        <ul class="language-popup" style="display: none;">
+          <li><a href="#">UA</a></li>
+          <li><a href="#">EN</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-header-top">
+        <a href="#" class="menu-item">О компании</a>
+        <a href="#" class="menu-item">Новости</a>
+        <a href="#" class="menu-item">Отчетность</a>
+        <a href="#" class="menu-item">Контакты</a>
+        <a href="#" class="menu-item">Оферта</a>
+        <a href="#" class="menu-item">Страховой случай</a>
+        <a href="#" class="menu-item menu-item-cabinet">Личный кабинет</a>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <a href="#" class="logo"><img src="images/logo-header.png" alt="ТАС"></a>
+
+      <div class="header-bottom-banner">
+        <img src="images/banner.png" alt="Лидер рынка">
+      </div>
+
+      <div class="header-bottom-right">
+        <div class="phone">0 800 500 195<img src="images/slash.png" alt="/" class="phone-slash"><a href="#" class="phone-short">518</a></div>
+        <div class="menu-header-bottom">
+          <a href="#" class="menu-item">Перезвоните мне</a>
+          <a href="#" class="menu-item">Онлайн консультация</a>
+          <a href="#" class="menu-item menu-item-icon"><img src="images/icon-skype.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <ul class="steps clrfix three-steps">
+    <li class="step-item active"><span>1. Условия</a></li>
+    <li class="step-item"><span>2. Выбор программы</a></li>
+    <li class="step-item"><span>3. Оформление</a></li>
+    <!-- <li class="step-item"><span>4. Оплата и доставка</a></li> -->
+  </ul>
+
+
+  <div class="wrapper">
+    <div class="calc-header clrfix">
+      <div class="col-2-12">
+        <div class="calc-header-icon"></div>
+      </div>
+      <div class="col-7-12">
+        <article class="calc-header-text-part">
+          <h1>Расчет полиса ОСАГО</h1>
+          <p class="short-description">Ищете надежную компанию для покупки ОСАГО? Оформляйте ОСАГО в ТАС! Автострахование в «ТАС» — это сервис... <a class="expand pseudo" href="#">Узнать больше</a></p>
+          <div class="full-description hided" >
+            <p>В дополнение к обязательному страхованию гражданско-правовой ответственности владельцев наземных транспортных средств (ОСГПОВНТС) специалистами страховой группы "ТАС" был разработан новый страховой продукт "Полная автозащита", покрывающий риски связанные с эксплуатацией транспортного средства, как водителя – потерпевшей стороны, так и водителя владельца договора «Полная автозащита». Выбирая этот страховой продукт, страхователь получает оптимальное сочетание комплексной страховой защиты и качественного сервиса по доступной цене и с целым рядом дополнительных преимуществ и сервисов.</p>
+            <p>В дополнение к обязательному страхованию гражданско-правовой ответственности владельцев наземных транспортных средств (ОСГПОВНТС) специалистами страховой группы "ТАС" был разработан новый страховой продукт "Полная автозащита". <a class="collapse pseudo" href="#">Свернуть</a></p>
+          </div>
+        </article>
+      </div>
+      <div class="col-3-12">
+        <ul class="calc-header-list">
+          <li>Расчитайте страховку</li>
+          <li>Оплатите онлайн</li>
+          <li>Получите полис на имейл</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="calc clrfix">
+      <div class="col-9-12">
+        <div class="calc-form">
+          <div class="form">
+            <div class="wizard">
+              <div class="wizard-step">
+                <a class="wizard_step_title" href="#">Личная информация</a>
+                <div class="wizard_step_content">
+                  <table>
+                    <tr>
+                      <td width="200">
+                        <span class="labelCaption">Страховая сумма</span>
+                      </td>
+                      <td>
+                        <input type="textbox" id="" name="" class="size-l required valid" maxlength="50">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="200">
+                        <span class="labelCaption">Страховая сумма</span>
+                      </td>
+                      <td>
+                        <input type="textbox" id="" name="" class="size-l required valid" maxlength="50">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="200">
+                        <span class="pointer pointerImage" tabindex="-1" style="display: none;"></span>
+                        <span class="labelCaption">Валюта</span>
+                      </td>
+                      <td>
+                        <select id="" name="" class="size-l required" dependententitytypegid="" parametergid="">
+                          <option value="4d3e1537-9520-4fc0-b4a9-37edf57557ac" title="EUR">EUR</option>
+                          <option value="" title="USD">USD</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="200">
+                        <span class="labelCaption">Условия эксплуатации ТС</span>
+                      </td>
+                      <td>
+                        <input id="" name="" type="checkbox" class="valid">
+                        <label for="">Rent-a-car</label>
+                        <br />
+                        <input id="" name="" type="checkbox" class="valid">
+                        <label for="">Автобус</label>
+                        <br />
+                        <input id="" name="" type="checkbox" class="valid">
+                        <label for="">Автобус</label>
+                        <br />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="200">
+                        <span class="labelCaption">Условия эксплуатации ТС</span>
+                      </td>
+                      <td>
+                        <input id="" name="" type="radio" class="valid">
+                        <label for="">Rent-a-car</label>
+                        <br />
+                        <input id="" name="" type="radio" class="valid">
+                        <label for="">Автобус</label>
+                        <br />
+                        <input id="" name="" type="radio" class="valid">
+                        <label for="">Автобус</label>
+                        <br />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="wizard-step">
+                <a class="wizard_step_title" href="#">Страхувальник</a>
+                <div class="wizard_step_content">
+                  <table>
+                    <tr>
+                      <td width="200">
+                        <span class="labelCaption">Фамилия</span>
+                      </td>
+                      <td>
+                        <input type="textbox" id="" name="" class="size-l required valid" maxlength="50">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="200">
+                        <span class="labelCaption">Имя</span>
+                      </td>
+                      <td>
+                        <input type="textbox" id="" name="" class="size-l required valid" maxlength="50">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="200">
+                        <span class="labelCaption">Отчество</span>
+                      </td>
+                      <td>
+                        <input type="textbox" id="" name="" class="size-l required valid" maxlength="50">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="200">
+                        <span class="labelCaption">Пол</span>
+                      </td>
+                      <td>
+                        <select id="" name="" class="size-m valid">
+                          <option value="true" title="Мужчина">Мужчина</option>
+                          <option value="false" title="Женщина">Женщина</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="200">
+                        <span class="labelCaption">Дата рождения</span>
+                      </td>
+                      <td>
+                        <input type="textbox" id="" name="" class="size-s dateDE hasDatepicker datepicker valid" mindate="07.02.1914" maxdate="07.02.2114" mask="99.99.9999" watermark="дд.мм.рррр" autocomplete="off">
+                        <span class="calendar-date">11</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3-12">
+        <div class="calc-price">
+          <h4>Ваш полис стоит</h4>
+          <div class="price">4560 грн</div>
+          <a href="#next" class="rounded-button">Оформить полис</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <ul class="menu-banners clrfix">
+    <li class="menu-banners-item">
+      <a href="#">
+        <table>
+          <tr>
+            <td class="banner-text-container">OСАГО дешевле&nbsp;на&nbsp;25%</td>
+          </tr>
+          <tr>
+            <td class="banner-image-container">
+              <img src="images/illustration-banner-percent.png" alt="">
+            </td>
+          </tr>
+        </table>
+      </a>
+    </li>
+    <li class="menu-banners-item">
+      <a href="#">
+        <table>
+          <tr>
+            <td class="banner-text-container">Урегулировать страховой&nbsp;случай</td>
+          </tr>
+          <tr>
+            <td class="banner-image-container">
+              <img src="images/illustration-banner-excl.png" alt="">
+            </td>
+          </tr>
+        </table>
+      </a>
+    </li>
+    <li class="menu-banners-item">
+      <a href="#">
+        <table>
+          <tr>
+            <td class="banner-text-container">Вызвать страхового&nbsp;агента</td>
+          </tr>
+          <tr>
+            <td class="banner-image-container">
+              <img src="images/illustration-banner-pointing-man.png" alt="">
+            </td>
+          </tr>
+        </table>
+      </a>
+    </li>
+    <li class="menu-banners-item">
+      <a href="#">
+        <table>
+          <tr>
+            <td class="banner-text-container">Финансовый отчёт за 2014&nbsp;год</td>
+          </tr>
+          <tr>
+            <td class="banner-image-container">
+              <img src="images/illustration-banner-graph.png" alt="">
+            </td>
+          </tr>
+        </table>
+      </a>
+    </li>
+  </ul>
+
+  <div class="news clrfix">
+    <div class="wrapper">
+      <div class="col-1-3">
+        <a href="#"><h3>Новые тарифы на ОСАГО</h3></a>
+        <p>Лекцию «Культура большого города: есть ли место ответственности каждого?» провела страховая компания ТАС.</p>
+      </div>
+      <div class="col-1-3">
+        <a href="#"><h3>Новые тарифы на ОСАГО</h3></a>
+        <p>Лекцию «Культура большого города: есть ли место ответственности каждого?» провела страховая компания ТАС.</p>
+      </div>
+      <div class="col-1-3">
+        <a href="#"><h3>Новые тарифы на ОСАГО</h3></a>
+        <p>Лекцию «Культура большого города: есть ли место ответственности каждого?» провела страховая компания ТАС.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="seo clrfix">
+      <div class="col-1-3">
+        <p>Страховая программа «Зимний спорт» создана специально для тех, кто планирует провести новогодние каникулы или зимний отпуск на горнолыжных курортах России, Европы или в любой другой стране мира.</p>
+        <p>Полис подходит для предоставления в посольства европейских стран для получения шенгенской визы.</p>
+      </div> 
+      <div class="col-1-3">
+        <p>Страховая программа «Зимний спорт» создана специально для тех, кто планирует провести новогодние каникулы или зимний отпуск на горнолыжных курортах России, Европы или в любой другой стране мира.</p>
+        <p>Полис подходит для предоставления в посольства европейских стран для получения шенгенской визы.</p>
+      </div>
+      <div class="col-1-3">
+        <p>Страховая программа «Зимний спорт» создана специально для тех, кто планирует провести новогодние каникулы или зимний отпуск на горнолыжных курортах России, Европы или в любой другой стране мира.</p>
+        <p>Полис подходит для предоставления в посольства европейских стран для получения шенгенской визы.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="footer clrfix">
+      <div class="col-1-3 clrfix">
+        <div class="col-1-2">
+          <h4>Меню</h4>
+          <a href="#">О компании</a>
+          <a href="#">Новости</a>
+          <a href="#">Отчетность</a>
+          <a href="#">Контакты</a>
+        </div>  
+        <div class="col-1-2 col-1-2-second">
+          <a href="#">Оферта</a>
+          <a href="#">Cтраховой случай</a>
+          <a href="#">Личный кабинет</a>
+        </div>
+      </div>
+      <div class="col-1-3 clrfix">
+        <div class="col-1-2">
+          <h4>Продукты</h4>
+          <a href="#">ОСАГО</a>
+          <a href="#">Каско</a>
+          <a href="#">Туризм</a>
+          <a href="#">Имущество</a>
+        </div>  
+        <div class="col-1-2">
+          <h4>Cоциальные сети</h4>
+          <a href="#" class="icon-social icon-social-facebook">Facebook</a>
+          <a href="#" class="icon-social icon-social-twitter">Twitter</a>
+          <a href="#" class="icon-social icon-social-youtube">Youtube</a>
+          <a href="#" class="icon-social icon-social-lj">Livejournal</a>
+        </div>
+      </div>
+      <div class="col-1-3 clrfix">
+        <div class="fb-follow" data-href="https://www.facebook.com/TAS.Insurance.Group" data-width="200px" data-height="115px" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div>
+        <p class="footer-asteriks">* По версии Insurance Top</p>
+      </div>
+    </div>
+    <div class="footer-made-in">
+      <p>Сделано в <a href="www.in-core.com.ua"><img src="images/logo-incore.png" alt="InCore"></a></p>
+    </div>
+  </div>
+  
+
+
+</body>
+</html>
