@@ -46,6 +46,12 @@ article p{
   padding: 14px 0;
   margin: 0;
 }
+article ul li{
+  font-size: 18px;
+  color: #666666;
+  line-height: 28px;
+  margin: 0;
+}
 article a{
   color: #156da5;
 }
@@ -538,6 +544,42 @@ p.footer-asteriks{
 .fb-follow{
   height: 115px;
 }
+
+
+
+/*--------Universal---------*/
+
+.universal{
+  background-repeat: no-repeat;
+  background-position: center 0;
+  margin-top: 30px;
+}
+.header-universal{
+  background-color: #156da5;
+  padding: 10px 40px 25px;
+  margin-top: 170px;
+  margin-bottom: 50px;
+}
+.header-universal p, .header-universal h1{
+  color: white;
+}
+.content-universal{
+  padding: 0 40px 50px;
+
+}
+.universal .col-7-12{
+  margin-left: 15%;
+}
+.universal .col-3-12{
+  margin-top: 449px;
+}
+.universal img{
+  max-width: 100%;
+}
+.universal h2{
+  margin-bottom: 0px;
+}
+
 
 
 
